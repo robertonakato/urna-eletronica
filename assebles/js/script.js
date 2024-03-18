@@ -68,9 +68,20 @@ function atualizarInterface(){
     }
 
 }
+function audios(){
+    let audio = new Audio ("./assebles/sons/click.mp3")
+    audio.volume =0.2;
+    audio.play();
+}
+function correto(){
+    let audio = new Audio ("./assebles/sons/correto.mp3")
+    audio.volume =0.2;
+    audio.play();
+}
 function clicou(n){
     let codigos = document.querySelector(".numero.pisca")
-    if( codigos !== null){
+    if( codigos !== null){ 
+        audios()
         codigos.innerHTML = n;
         numerocandidato += n
         codigos.classList.remove("pisca")
@@ -102,6 +113,7 @@ function confirmar(){
     let etapa = etapas[etapaatual]
     let confirmandovoto = false
     if(votobranco === true){
+        correto()
     confirmandovoto = true
          votos.push({ 
            etapa: etapas[etapaatual].titulo,
@@ -110,6 +122,7 @@ function confirmar(){
     }
     else if (numerocandidato.length === etapa.numeros ){
         confirmandovoto = true
+        correto()
         votos.push({ 
             etapa: etapas[etapaatual].titulo,
              voto:numerocandidato

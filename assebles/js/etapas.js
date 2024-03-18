@@ -8,7 +8,7 @@ let etapas =[
         nome: "Ferdinand",
         Partido: "Presas&preds",
         foto:[{
-            URL:"./assebles/img/Candidatos/FERDINAND.png",legenda:"Governador"
+            URL:"./assebles/img/Candidatos/FERDINAND.jpeg",legenda:"Governador"
         }]
 
     },

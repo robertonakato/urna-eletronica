@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assebles/css/style.css">
 </head>
 <body>
+    
+<div class="body">
     <div class="urna">
         <div class="tela">
             <div class="d1">
@@ -38,7 +40,6 @@
             <div class="d2"> Aperte a tecla: </br>
                 CONFIRMAR: Para confirmar seu Voto</br>
                 CORRIGE: Para corrigir seu Voto </br>
-                BRANCO: Para Votar em Branco
             </div>
         </div>
         <div class="teclado">
@@ -61,12 +62,13 @@
                 <div class="teclado_botao"onclick="clicou('0')">0</div>
             </div>
             <div class="teclado_linha">
-                <div class="teclado_botao botao_Branco" onclick="branco()" >BRANCO</div>
-                <div class="teclado_botao botao_corrigir" onclick="corrige()">CORRIGE</div>
-                <div class="teclado_botao botao_confirmar" onclick="confirmar()">CONFIRMAR</div>
+                <button class="teclado_botao botao_Branco" onclick="branco()" >BRANCO</button>
+                <button class="teclado_botao botao_corrigir" onclick="corrige()">CORRIGE</button>
+                <button class="teclado_botao botao_confirmar" onclick="confirmar()">CONFIRMAR</button>
             </div>
         </div>
     </div>
+</div>    
     <script src="./assebles/js/etapas.js"> </script>
     <script src="./assebles/js/script.js"> </script>
 
